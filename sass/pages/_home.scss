@@ -1,0 +1,43 @@
+.section-about {
+    background-color: $color-light-blue;
+    // background-image: linear-gradient(
+    //     to right bottom,
+    //     rgba(($color-gray-light), .50), 
+    //     rgba(($color-mauve-dark), 0.50));
+    // background-image: linear-gradient(
+    // to right bottom, 
+    // rgba($color-slate-blue, 0.6),
+    // rgba($color-gray-light, 0.8));
+    padding-top: 15rem;
+    padding-bottom: 20rem;
+    margin-top: -5vh;
+}
+
+.section-features {
+    padding-top: 15rem;
+    padding-bottom: 20rem;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(($color-slate-blue), .50), 
+        rgba(($color-mauve-dark), 0.80)), 
+        url(../img/calvin-and-hobbes-rock-hopping.jpg);
+    background-size: cover;
+    transform: skewY(-1.5deg);
+
+    & > * {
+        transform: skewY(1.5deg);
+    }
+
+    margin-top: -5vh;
+}
+
+.section-projects {
+    background-color: $color-light-blue;
+    padding-top: 20rem;
+    padding-bottom: 10rem;
+    margin-top: -10rem;
+
+    @include respond(tab-port) {
+        padding: 20rem 0 10rem 0;
+    }
+}
