@@ -44,11 +44,6 @@
         background-size: cover;
         height: 28rem;
         background-blend-mode: screen;
-        // -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
-        // clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
-        // border-top-left-radius: 3px;
-        // border-top-right-radius: 3px;
-        
         &--1 {
             background-image: url(../../img/moodmap.png);
         }
@@ -56,10 +51,6 @@
         &--2 {
             background-image: url(../../img/SIIDnew.png);
         }
-
-        // &--3 {
-        //     background-image: url(../img/nat-5.jpg);;
-        // }
     }
 
     &__heading {
@@ -83,18 +74,6 @@
         &--1 {
             font-family: $megrim;
         }
-
-        // &--2 {
-        //     background-image: linear-gradient(to right bottom, 
-        //     rgba($color-primary-light, .85), 
-        //     rgba($color-primary-dark, .85));
-        // }
-
-        // &--3 {
-        //     background-image: linear-gradient(to right bottom, 
-        //     rgba($color-tertiary-light, .85), 
-        //     rgba($color-tertiary-dark, .85));
-        // }
     }
 
     &__details {
@@ -143,10 +122,6 @@
         font-size: 6rem;
         font-weight: 100;
     }
-
-
-
-
 
     //@include respond(tab-port) {
     @media only screen and (max-width: 56.25em),
