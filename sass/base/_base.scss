@@ -1,6 +1,6 @@
 /* Cancel out any padding/margins added by browsers 
-and changes box model so borders and paddings no longer 
-added to total width or height that I specify */
+and changes box model so borders and paddings are no longer 
+added to total width or height that we specify */
 *,
 *::after,
 *::before {
@@ -10,8 +10,13 @@ added to total width or height that I specify */
 }
 
 html {
-    // This defines what 1rem is
-    font-size: 62.5%;
+  /* Default font size of browsers is 16px
+  For ease of use in Sass we want the default to be 10px
+  If we hard-coded 10px here, that would override the browser font size setting, 
+  which some people change for for accessibility. Instead we use a % so that
+  People (for accessibility) can still increase sizes and the fonts will increase with them. */
+  // This defines what 1rem is
+  font-size: 62.5%;
 }
 
 body {
